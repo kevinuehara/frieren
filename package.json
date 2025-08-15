@@ -1,0 +1,40 @@
+{
+  "name": "@kevinuehara/frieren",
+  "version": "1.0.0",
+  "description": "React library Simple Design System",
+  "main": "dist/frieren.umd.js",
+  "module": "dist/frieren.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "components",
+    "ui",
+    "button",
+    "input",
+    "design-system",
+    "frieren"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^3.0.0",
+    "typescript": "^5.1.0",
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "@kevinuehara/frieren": "^1.0.0"
+  }
+}
