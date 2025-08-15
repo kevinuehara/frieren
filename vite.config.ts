@@ -1,14 +1,21 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import dts from 'vite-plugin-dts';
+import { resolve } from 'path';
 
 export default defineConfig({
-  plugins: [react(), dts({ insertTypesEntry: true })],
+  plugins: [
+    react(),
+    dts({
+      insertTypesEntry: true,
+    }),
+  ],
   build: {
     lib: {
-      entry: 'src/index.ts',
-      name: 'frieren',
+      entry: resolve(__dirname, 'src/index.ts'),
+      name: 'Frieren',
       fileName: (format) => `frieren.${format}.js`,
+      formats: ['es', 'umd'],
     },
     rollupOptions: {
       external: ['react', 'react-dom'],
@@ -19,5 +26,6 @@ export default defineConfig({
         },
       },
     },
+    cssCodeSplit: false,
   },
 });

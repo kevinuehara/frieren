@@ -1,13 +1,14 @@
 {
   "name": "@kevinuehara/frieren",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "description": "React library Simple Design System",
   "types": "dist/index.d.ts",
   "main": "dist/frieren.umd.js",
   "module": "dist/frieren.es.js",
   "files": [
-    "dist"
+    "dist",
+    "dist/tokens"
   ],
   "scripts": {
     "dev": "vite",
@@ -31,6 +32,7 @@
     "react-dom": "^19.1.1"
   },
   "devDependencies": {
+    "@types/node": "^24.3.0",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
     "@vitejs/plugin-react": "^5.0.0",
