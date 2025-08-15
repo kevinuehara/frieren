@@ -1,6 +1,19 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-  ]
+  "compilerOptions": {
+    "target": "ESNext",                   // Código de saída moderno
+    "module": "ESNext",                   // Módulo ES para Vite
+    "lib": ["DOM", "ESNext"],             // Bibliotecas incluídas
+    "jsx": "react-jsx",                   // JSX transform do React 18
+    "declaration": true,                  // Gera arquivos .d.ts
+    "declarationMap": true,               // Gera mapas das declarações
+    "outDir": "dist",                     // Pasta de saída da build
+    "rootDir": "src",                     // Pasta de origem
+    "strict": true,                       // Ativa todas verificações de tipo
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "include": ["src"],                      // Inclui só a pasta src
+  "exclude": ["node_modules", "dist"]      // Exclui node_modules e dist
 }
