@@ -1,0 +1,28 @@
+.tag {
+  border-radius: 18px;
+  padding: 10px 20px;
+  font-size: 18px;
+  width: fit-content;
+}
+
+.positive {
+  background-color: var(--color-success);
+  border: 1px solid var(--color-success);
+  color: #fff;
+}
+
+.error {
+  background-color: var(--color-danger);
+  border: 1px solid var(--color-danger);
+  color: #fff;
+}
+
+.neutral {
+  background-color: var(--color-neutral);
+  border: 1px solid var(--color-neutral);
+}
+
+.attention {
+  background-color: var(--color-warning);
+  border: 1px solid var(--color-warning);
+}
